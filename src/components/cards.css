@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-design{
+    border: 10px black solid;
+    border-radius: 2%;
+    margin: 10% 30%;
+    width: 250px;
+    background-color: rgb(54, 47, 31);
+}
+.card-title{
+    background-color:  rgb(238, 218, 175);
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 5px 0px;
+    padding: 10px 0px;
+}
+.card-image{
+    width: 250px;
+}
+.description-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.card-type{
+    font-weight: bolder;
+    align-self: center;
+    color: white;
+    background-color: brown;
+    padding-right: 33%;
+    margin-top: 7%;
+    
+
+}
+.card-rarity{
+    
+    width: 40px;
+    padding: 5%;
+}
+.card-power{
+    background-color: rgb(97, 85, 56);
+    color: white;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding: 10px;
+    margin: 0px 5px;
+    margin-bottom: 20px;
+    border:  solid 2px rgb(119, 103, 65) ;
+}
