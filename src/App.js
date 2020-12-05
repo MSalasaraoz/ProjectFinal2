@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import NewUser from './Components/NewUserComponents/NewUser';
-import AdminNewUser from './Components/Admin/AdminNewUser';
+import AdminUser from './Components/NewUserComponents/AdminUser';
 import Inicio from './Components/Inicio';
 import Nosotros from './Components/Nosotros';
 import {ButtonGroup, Button} from "react-bootstrap";
@@ -40,7 +40,7 @@ function App() {
             <NewUser />
           </Route>
           <Route path="/admin">
-            <AdminNewUser />
+            <AdminUser />
           </Route>
         </Switch>
       </Router>

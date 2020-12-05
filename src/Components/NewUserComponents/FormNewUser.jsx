@@ -6,6 +6,7 @@ const FormNewUser = ({ users, setUsers }) => {
 
     const onSubmit = (data, event) => {
         console.log(data)
+       
         event.target.reset();
         setUsers([...users, data])
     }
