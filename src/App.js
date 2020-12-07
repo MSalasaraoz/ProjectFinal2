@@ -5,6 +5,7 @@ import NewUser from './Components/NewUserComponents/NewUser';
 import AdminUser from './Components/NewUserComponents/AdminUser';
 import Inicio from './Components/Inicio';
 import Nosotros from './Components/Nosotros';
+import Example from './Components/Home/Navbar'
 import {ButtonGroup, Button} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.css'
 
@@ -44,6 +45,9 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Router> 
+        <Example/>
+        </Router>
     </>
   );
 }
