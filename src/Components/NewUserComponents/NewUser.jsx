@@ -4,6 +4,7 @@ import CardNewUser from './CardNewUser';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
 import './StyleNewUser.css'
+import './font-register.css'
 
 function NewUser() {
   const [users, setUsers] = useState([])
@@ -20,8 +21,9 @@ function NewUser() {
   return (
     <>
       <Container>
-        <h2>Hola Nuevo Usuario!!</h2>
-        <h4>Complete todos los datos para que lo registremos</h4>
+        <br></br>
+        <h1 className="container-form font-register">REGISTRATE</h1>
+        <br></br>
         <Row>
           <Col className="mb-4" xs={12}>
             <FormNewUser
@@ -35,7 +37,7 @@ function NewUser() {
             <div className="d-flex flex-wrap">
               {users.map((item) => {
                 return (
-                  <CardNewUser key={item.dni} user={item} />
+                  <CardNewUser key={item.apellido} user={item} />
                 )
               })}
             </div>

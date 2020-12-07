@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
+import {ButtonGroup, Button} from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import {
   Collapse,
@@ -16,7 +17,7 @@ import {
   NavbarText
 } from 'reactstrap';
 import logo from './logo.png';
-import NewUser from './Components/NewUserComponents/NewUser';
+import NewUser from '../../NewUserComponents/NewUser';
 
 
 
@@ -27,6 +28,7 @@ const Example = (props) => {
 
   return (
     <div>
+      <Router>
       <Navbar color="dark" dark expand="md">
         <NavbarBrand href="/"><img src={logo}></img></NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -36,7 +38,7 @@ const Example = (props) => {
               <NavLink href="/components/">Inicio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Nosotros</NavLink>
+              <NavLink href="">Nosotros</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -56,19 +58,18 @@ const Example = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <Router>
-          <Link to="/">
-              <Button>Inicio</Button>
-            </Link>
-            <Switch>
+              <Button>Login</Button>
+            <Link to="/newuser">
+            <Button>Registro</Button>
+          </Link>
+        </Collapse>
+      </Navbar>
+      <Switch>
             <Route path="/newuser">
             <NewUser />
           </Route>
             </Switch>
-            </Router>
-          <NavbarText>Registro</NavbarText>
-        </Collapse>
-      </Navbar>
+      </Router>
     </div>
   );
 }
