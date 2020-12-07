@@ -45,9 +45,9 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <Router> 
+      {/* <Router> 
         <Example/>
-        </Router>
+        </Router> */}
     </>
   );
 }
