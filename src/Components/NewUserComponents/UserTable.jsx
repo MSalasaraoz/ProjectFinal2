@@ -1,8 +1,7 @@
 import React from 'react';
 
-const UserTable = (props) => {
-    console.log("props que traigo de adminUser " + props.users)
-
+const UserTable = ({ user }) => {
+    // console.log("traigo de formNewUser? " + user)
     return (
         <table>
             <thead>
@@ -13,24 +12,17 @@ const UserTable = (props) => {
                 </tr>
             </thead>
             <tbody>
-                {props.users.lenght > 0 ? (
-                    props.users.map(listUser => (
-                        <tr key={listUser.id}>
-                            <td>{listUser.userName}</td>
-                            <td>{listUser.newUser}</td>
-                            <td>
-                                <button className="button muted-button">Edit</button>
-                                <button className="button muted-button">Delete</button>
-                            </td>
-                        </tr>
-                    ))) : (
-                        <tr>
-                            <td colSpan={3}>No Users</td>
-                        </tr>
-                    )}
+                <tr>
+                    <td> {user["userName"]}</td>
+                    <td>{user["newUser"]}</td>
+                    <td>
+                        <button className="button muted-button">Edit</button>
+                        <button className="button muted-button">Delete</button>
+                    </td>
+                </tr>
+
             </tbody>
-        </table>
+        </table >
     );
 }
-
 export default UserTable;

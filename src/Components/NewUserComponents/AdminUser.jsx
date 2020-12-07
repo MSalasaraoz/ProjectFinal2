@@ -4,15 +4,16 @@ import UserTable from './UserTable';
 import { v4 as uuidv4 } from 'uuid';
 import FormNewUser from './FormNewUser';
 
-function AdminUser({ users, setUsers }) {
- 
-  // const [users, setUsers] = useState(usersData)
+function AdminUser() {
+
+
+const [users, setUsers] = useState([])
 
   //funcion para que ingresen los usuarios agregados con formNewUser
-  const addUser = (data) => {
-    users.id = uuidv4()
-    setUsers([...users, data])
-  }
+  // const addUser = (data) => {
+  //   users.id = uuidv4()
+  //   setUsers([...users, data])
+  // }
 
 
   return (
@@ -21,11 +22,14 @@ function AdminUser({ users, setUsers }) {
       <div className="flex-row">
         <div className="flex-large">
           <h2>Add user</h2>
-          <FormNewUser addUser={addUser} />
         </div>
         <div className="flex-large">
           <h2>View users</h2>
-          <UserTable users={users} />
+          {users.map((item) => {
+            return (
+              <UserTable key={item.dni} user={item} />
+            )
+          })}
 
         </div>
       </div>

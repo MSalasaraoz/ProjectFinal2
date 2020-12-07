@@ -6,7 +6,6 @@ const FormNewUser = ({ users, setUsers }) => {
 
     const onSubmit = (data, event) => {
         console.log(data)
-       
         event.target.reset();
         setUsers([...users, data])
     }
@@ -87,8 +86,8 @@ const FormNewUser = ({ users, setUsers }) => {
                     name="password"
                     type="password"
                     ref={register({
-                        required: {value: true, message: 'Ingrese una clave'},
-                        minLength: {value: 6, message: 'Su clave debe tener al menos 6 digitos'}
+                        required: { value: true, message: 'Ingrese una clave' },
+                        minLength: { value: 6, message: 'Su clave debe tener al menos 6 digitos' }
                     })}
                 />
                 <span className="text-danger text-small d-block mb-2">
@@ -101,17 +100,17 @@ const FormNewUser = ({ users, setUsers }) => {
                     name="validatePassword"
                     type="password"
                     ref={register({
-                        required: {value: true},
+                        required: { value: true },
                         validate: {
-                          matchesPreviousPassword: (value) => {
-                            const { password } = getValues();
-                            return password === value || 'Debe coincider ambas claves';
-                          },
+                            matchesPreviousPassword: (value) => {
+                                const { password } = getValues();
+                                return password === value || 'Debe coincider ambas claves';
+                            },
                         }
-                      })}
+                    })}
                 />
                 <span className="text-danger text-small d-block mb-2">
-                {errors.validatePassword && errors.validatePassword.message}
+                    {errors.validatePassword && errors.validatePassword.message}
                 </span>
                 <button type="submit" className="btn btn-dark">
                     Enviar
