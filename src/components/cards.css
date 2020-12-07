@@ -2,21 +2,11 @@
     margin: 0;
     padding: 0;
 }
-.card-design{
-    border: 10px black solid;
-    border-radius: 2%;
-    margin: 10% 30%;
-    width: 250px;
-    background-color: rgb(54, 47, 31);
+.flex-cards{
+    display: flex;
 }
-.card-title{
-    background-color:  rgb(238, 218, 175);
-    letter-spacing: 2px;
-    font-weight: bolder;
-    font-size: 25px;
-    margin: 5px 0px;
-    padding: 10px 0px;
-}
+
+
 .card-image{
     width: 250px;
 }
@@ -24,28 +14,127 @@
     display: flex;
     justify-content: space-between;
 }
-.card-type{
-    font-weight: bolder;
-    align-self: center;
-    color: white;
-    background-color: brown;
-    padding-right: 33%;
-    margin-top: 7%;
-    
-
-}
 .card-rarity{
     
     width: 40px;
     padding: 5%;
 }
-.card-power{
+
+.bolder{
+    font-weight: bolder;
+}
+
+/* rarities variables */
+/*rare*/
+.card-design-rare{
+    float: inline-start;
+    align-self: flex-start;
+    border: 10px black solid;
+    border-radius: 2%;
+    width: 250px;
+    background-color: rgb(54, 47, 31);
+}
+.card-title-rare{
+    background-color:  rgb(238, 218, 175);
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 5px 0px;
+    padding: 10px 0px;
+}
+.card-type-rare{
+    font-weight: bolder;
+    align-self: center;
+    color: white;
+    background-color: brown;
+    width: 100%;
+    margin-top: 7%;
+    font-size: 20px;
+    line-break: loose;
+    text-align: center;
+}
+.card-power-rare{
     background-color: rgb(97, 85, 56);
     color: white;
-    /* padding-left: 10px;
-    padding-right: 10px; */
+
     padding: 10px;
     margin: 0px 5px;
     margin-bottom: 20px;
     border:  solid 2px rgb(119, 103, 65) ;
 }
+/*medium-rare*/
+.card-design-medium-rare{
+    float: inline-start;
+    align-self: flex-start;
+    border: 10px black solid;
+    border-radius: 2%;
+    width: 250px;
+    background-color: rgb(189, 126, 44);
+}
+.card-title-medium-rare{
+    background-color:  rgb(233, 228, 218);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 5px 0px;
+    padding: 10px 0px;
+}
+.card-type-medium-rare{
+    font-weight: bolder;
+    align-self: center;
+    color: rgb(8, 8, 8);
+    background-color: rgb(246, 174, 174);
+    width: 100%;
+    margin-top: 7%;
+    font-size: 20px;
+    line-break: loose;
+    text-align: center;
+}
+.card-power-medium-rare{
+    background-color: rgb(150, 120, 50);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 0px 5px;
+    margin-bottom: 20px;
+    border:  solid 2px rgb(10, 10, 10) ;
+}
+/*common*/
+.card-design-common{
+    float: inline-start;
+    align-self: flex-start;
+    border: 10px rgb(37, 36, 36) solid;
+    border-radius: 2%;
+    width: 250px;
+    background-color: rgb(216, 215, 213);
+}
+.card-title-common{
+    background-color:  rgb(39, 37, 37);
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-size: 25px;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    color: white;
+}
+.card-type-common{
+    font-weight: bolder;
+    align-self: center;
+    color: white;
+    background-color: rgb(10, 4, 4);
+    width: 100%;
+    margin-top: 7%;
+    font-size: 20px;
+    line-break: loose;
+    text-align: center;
+    
+
+}
+.card-power-common{
+    background-color: rgb(165, 148, 108);
+    color: white;
+    padding: 10px;
+    margin: 0px 5px;
+    margin-bottom: 20px;
+    border:  solid 2px rgb(34, 33, 31) ;
+}
+
