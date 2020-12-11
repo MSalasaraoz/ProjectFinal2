@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import logo from './Components/logo.png';
-import NewUser from './Components/NewUserComponents/NewUser';
+import FormNewUser from './Components/NewUserComponents/FormNewUser';
 // import AdminUser from './Components/NewUserComponents/AdminUser';
 //Ver donde colocamos la administracion de usuarios
 import Inicio from './Components/Inicio';
@@ -52,7 +52,7 @@ function App(props) {
             <Link to="/login">
             <Button>Login</Button>
             </Link>
-            <Link to="/newuser">
+            <Link to="/formnewuser">
               <Button>Registro</Button>
             </Link>
           </Collapse>
@@ -64,8 +64,8 @@ function App(props) {
           <Route path="/nosotros">
             <Nosotros />
           </Route>
-          <Route path="/newuser">
-            <NewUser />
+          <Route path="/formnewuser">
+            <FormNewUser />
           </Route>
           <Route path="/login">
             <LogIn />
