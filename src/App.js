@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import CardFamous from './components/CardFamous'
+import CardFamous from './Components/CardFamous'
 function App() {
   return (
     
