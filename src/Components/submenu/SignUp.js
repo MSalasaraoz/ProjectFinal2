@@ -4,7 +4,7 @@ import './MainStyle.css';
 function SignUp(){
     return(
         <div>
-            lo que hizo jime
+            lo que hizo Mariano
         </div>
     )
 }
