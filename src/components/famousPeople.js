@@ -1,7 +1,8 @@
 import React from 'react'
-import './cards.css'
-function Cards() {
-    //this is the array of objects with the data of the cards
+import CardFamous from './CardFamous'
+
+
+  //this is the array of objects with the data of the cards
     const famousPeople = [
         {
             id: 0,
@@ -14,10 +15,10 @@ function Cards() {
         {
             id: 1,
             name: 'Santiago del Moro',
-            img: "images/Santiago del moro.webp",
+            img: "images/Santiago del moro.jpg",
             type: 'Artes dramaticas',
             rarity: 'images/rare.png',
-            power: 'Poderes telekineticos: elige una carta oponente del enemigo e indaga en sus problemas de la infancia hasta que lo hace llorar. esa carta queda inutilizada por 4 turnos.'
+            power: 'Poderes telekineticos: elige una carta oponente del enemigo e indaga en sus problemas de la infancia hasta que lo hace llorar.'
         },
         {
             id: 2,
@@ -33,7 +34,7 @@ function Cards() {
             img: "images/marcelo tinelli.jpg",
             type: "Artes mediaticas",
             rarity: "images/rare.png",
-            power: 'Cuando esta carta es jugada. tus cartas ganan fama haciendolas mas poderosas. '
+            power: 'Cuando esta carta es jugada. tus cartas ganan fama haciendolas mas poderosas. Gana fuerza si la invocas con la carta magica "Reidores" '
         },
         {
             id: 4,
@@ -41,15 +42,15 @@ function Cards() {
             img: "images/Mirta legrand.jpg",
             type: "Artes longevas",
             rarity: "images/rare.png",
-            power: "esta carta al ser jugada tiene el poder de hacer preguntas incomodas. disminuye la fuerza de los oponentes. indestructible y eterna en el campo de juego."
+            power: "esta carta tiene el poder de hacer preguntas incomodas. disminuye la fuerza de los oponentes. indestructible y eterna en el campo de juego."
         },
         {
             id: 5,
-            name: 'Gladys La Bomba Tucumana',
+            name: 'La Bomba Tucumana',
             img: "images/Gladys la bomba tucumana.jpg",
             type: "Disciplinas tropicales",
             rarity: "images/medium-rare.png",
-            power: "cuando esta carta es jugada con la carta magica 'pollera amarilla' las cartas del oponente enloquecen y quedan inutilizadas por un turno"
+            power: "cuando es jugada con la carta magica 'pollera amarilla' las cartas del oponente enloquecen y quedan inutilizadas por un turno"
         },
         {
             id: 6,
@@ -97,7 +98,7 @@ function Cards() {
             img: "images/marianela mirra.jpg",
             type: "Tecnicas Granhermanisticas",
             rarity: "images/common.png",
-            power: "elige dos cartas del oponente para hacerle una espontanea. por dos turnos la cartas desaparecen y el oponente no sabe porque. Alguien le grita de lejos al oponente que paso y se elimina esta carta."
+            power: "elige dos cartas del oponente para hacerle una espontanea. por dos turnos la cartas desaparecen. Alguien le grita de lejos al oponente que paso y se elimina esta carta."
         },
         {
             id: 12,
@@ -132,85 +133,5 @@ function Cards() {
             power: "elige la carta de un oponente y puedes describir datos de la vida de ese personaje de manera erronea. Desde ese turno, esa información es verdad"
         }
     ]
-    //this is the functions were the rarity of the cards modify the design
-    function cardDesignVariant(rarity) {
-        switch (rarity) {
-            case "images/rare.png":
-                return "card-design-rare"
-                break;
-            case "images/medium-rare.png":
-                return "card-design-medium-rare"
-                break;
-            case "images/common.png":
-                return "card-design-common"
-                break;
-            default:
-                return ""
-                break;
-        }
-    }
-    function cardTitleVariant(rarity) {
-        switch (rarity) {
-            case "images/rare.png":
-                return "card-title-rare"
-                break;
-            case "images/medium-rare.png":
-                return "card-title-medium-rare"
-                break;
-            case "images/common.png":
-                return "card-title-common"
-                break;
-            default:
-                return ""
-                break;
-        }
-    }
-    function cardTypeVariant(rarity) {
-        switch (rarity) {
-            case "images/rare.png":
-                return "card-type-rare"
-                break;
-            case "images/medium-rare.png":
-                return "card-type-medium-rare"
-                break;
-                case "images/common.png":
-                    return "card-type-common"
-                    break;
-            default:
-                return ""
-        }
-    }
-    function cardPowerVariant(rarity) {
-        switch (rarity) {
-            case "images/rare.png":
-                return "card-power-rare"
-                break;
-            case "images/medium-rare.png":
-                return "card-power-medium-rare"
-                break;
-            case "images/common.png":
-                return "card-power-common"
-                break;
-            default:
-                return ""
-        }
-    }
-    //this is were the cards find the final design
-    const showCards =
-        famousPeople.map(VIP =>
-            <div className={cardDesignVariant(VIP.rarity)}>
-                <p className={cardTitleVariant(VIP.rarity)}>{VIP.name}</p>
-                <img className="card-image" src={VIP.img} alt=""></img>
-                <div className="description-flex">
-                    <div className={cardTypeVariant(VIP.rarity)}>{VIP.type}</div>
-                    <img className="card-rarity" src={VIP.rarity} alt=""></img>
-                </div>
-                <div className={cardPowerVariant(VIP.rarity)}>{VIP.power}</div>
-            </div>);
 
-
-
-    return showCards;
-
-};
-export default Cards;
+export default famousPeople;

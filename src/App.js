@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Cards from './Components/cards'
+import CardFamous from './components/CardFamous'
 function App() {
   return (
     
-      <Cards></Cards>
+      <CardFamous/>
     
   );
 }
