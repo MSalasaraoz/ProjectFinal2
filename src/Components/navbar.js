@@ -11,7 +11,9 @@ function Navbar(){
         <Router>
         <div className="Navbar-background">
             <div className="flex-item-1">
-                <a  href="/"><img className="Logo" src={logo}  alt=""></img></a>
+                <a  href="/">
+                    <img className="Logo" src={logo}  alt=""></img>
+                    <img src="projectfinale.png" class="Logo-text" alt=""></img>      </a>
                 <a href="/Own-Cards" className="sub-menu">Tus Cartas</a>
                 <a href="/Us" className="sub-menu">Nosotros</a>
             </div>

@@ -1,12 +1,7 @@
-import React from 'react';
-import './MainStyle.css';
+import React from "react";
+import useForm from "react-hook-form"
 
 function SignUp(){
-    return(
-        <div>
-            lo que hizo Mariano
-        </div>
-    )
+  return("nada")
 }
-
 export default SignUp;

@@ -15,6 +15,9 @@
     align-self: end;
     width: 80px;
 }
+.Logo-text{
+    height: 80px;
+}
 .flex-item-1{
     display: flex;
     flex-direction: row;

@@ -3,11 +3,33 @@
     padding: 0;
 }
 .title{ 
+    margin-top: 2%;
+    color: white;
+    border: 5px inset black;
 font-size: 80px;
 font-weight: bolder;
+background: radial-gradient(circle, rgba(23,3,18,1) 43%, rgba(4,15,15,1) 100%, rgba(214,40,40,1) 100%);
+}
+.Main-Body{
+    margin: 2% 5%;
+    font-size: 20px;
 }
 .Home-flex{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.Buy-Button{
+    font-size: 30px;
+    color: black;
+    padding:  1% 5%;
+    border: dotted 5px black;
+    cursor: pointer;
+    background: radial-gradient(circle, rgba(224,224,224,1) 0%, rgba(214,40,40,1) 100%, rgba(4,15,15,1) 100%)
+
+}
+.Buy-Button:hover{
+    color: grey;
+    border-color: grey;
+    transition: all 500ms;
 }
