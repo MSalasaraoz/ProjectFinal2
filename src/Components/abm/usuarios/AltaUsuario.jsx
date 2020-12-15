@@ -42,6 +42,7 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
   }
   return (
     <>
+    <div className="container">
        <div className="Titulo"> Registrate para estar en la lista VIP</div>
       <Form className="Formulario" onSubmit={handleSubmit} name="formNewUser">
         <Form.Group controlId="firstName">
@@ -114,10 +115,11 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
             value={user.password}
           />
         </Form.Group>
-        <Button className="w-30" variant="dark" type="submit">
+        <Button className="w-100" size="sm" variant="dark" type="submit">
           Inicia Sesión
         </Button>
       </Form>
+      </div>
     </>
   );
 };

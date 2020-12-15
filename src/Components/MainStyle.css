@@ -20,13 +20,14 @@ background: radial-gradient(circle, rgba(23,3,18,1) 43%, rgba(4,15,15,1) 100%, r
     align-items: center;
 }
 .Buy-Button{
+    text-align: center;
+    justify-self: center;
     font-size: 30px;
     color: black;
     padding:  1% 5%;
     border: dotted 5px black;
     cursor: pointer;
     background: radial-gradient(circle, rgba(224,224,224,1) 0%, rgba(214,40,40,1) 100%, rgba(4,15,15,1) 100%)
-
 }
 .Buy-Button:hover{
     color: grey;
@@ -37,10 +38,11 @@ background: radial-gradient(circle, rgba(23,3,18,1) 43%, rgba(4,15,15,1) 100%, r
 .footer{
     position: block;
     float: inline-end;
-    /* bottom: 0; */
+
     font-size: 20px;
     background-color: thistle;
     padding: 0 29% ;
+    text-align: center;
 }
 
 @media (max-width: 500px){

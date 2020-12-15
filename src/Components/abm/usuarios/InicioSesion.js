@@ -1,6 +1,5 @@
 import React,{Component} from "react";
 import { withRouter } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.css";
 import "./altaUsuario.css";
 import { Form, Button } from "react-bootstrap";
 
@@ -64,7 +63,7 @@ const InicioSesion = ({ setUser, user, users, setUsers }) => {
             value={user.password}
           />
         </Form.Group>
-        <Button className="w-30 MoviendoElBoton" variant="dark" type="submit">
+        <Button size="small" className="botones" variant="dark" type="submit">
           Inicia Sesión
         </Button>
 
