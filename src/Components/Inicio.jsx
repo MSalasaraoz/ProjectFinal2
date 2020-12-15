@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function Inicio() {
-    return (
-        <>
-            <h1>Este es el Inicio</h1>
-        </>
-    );
+  return (
+    <>
+      <h1>Este es el Inicio</h1>
+    </>
+  );
 }
 
 export default Inicio;

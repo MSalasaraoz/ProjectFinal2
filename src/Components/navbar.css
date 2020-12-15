@@ -1,44 +1,43 @@
-*{
-    font-style: unset;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+* {
+  font-style: unset;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
-.Navbar-background{
-    height: 80px;
-    background-color: #040f0f;
-    display: flex;
-    justify-content: space-between;
-
+.Navbar-background {
+  height: 80px;
+  background-color: #040f0f;
+  display: flex;
+  justify-content: space-between;
 }
-.Logo{
-    align-self: end;
-    width: 80px;
+.Logo {
+  align-self: end;
+  width: 80px;
 }
-.Logo-text{
-    height: 80px;
+.Logo-text {
+  height: 80px;
 }
-.flex-item-1{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
+.flex-item-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
-.sub-menu{
-    align-self: flex-end;
-    color: white;
-    font-size: 25px;
-    font-weight: bolder;
-    padding-left: 140px;
-    border-right: solid white 5px;
-    cursor: pointer;
+.sub-menu {
+  align-self: flex-end;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  padding-left: 140px;
+  border-right: solid white 5px;
+  cursor: pointer;
 }
-.flex-item-2{
-    align-self: center;
+.flex-item-2 {
+  align-self: center;
 }
-.sign-up{
-    background-color: #D62828;
-    font-size: 25px;
-    padding: 23.5px;
-    align-self: end;
-    color: white;
+.sign-up {
+  background-color: #d62828;
+  font-size: 25px;
+  padding: 23.5px;
+  align-self: end;
+  color: white;
 }

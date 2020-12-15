@@ -7,12 +7,17 @@ import FormNewUser from './FormNewUser';
 function UserPage() {
   const [users, setUsers] = useState([])
   const [user, setUser] = useState({
-    userName: ''
+    firstName: '',
+    lastName: '',
+    country:'',
+    age: '',
+    email: '',
+    userName:'',
+    role:''
   })
   return (
     <>
-      <h1>hola soy la pagina del usuario</h1>
-      <FormNewUser
+       <FormNewUser
         setUser={setUser}
         user={user}
         users={users}

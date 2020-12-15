@@ -1,45 +1,47 @@
-import React, {useState} from 'react';
-import { useForm } from 'react-hook-form';
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.css'
-import './StyleNewUser.css'
-import './font-register.css'
-import { Form } from 'react-bootstrap';
-import { Container, Col } from 'react-bootstrap';
-import './containerform.css'
-import UserPage from './UserPage';
+import "bootstrap/dist/css/bootstrap.css";
+import "./StyleNewUser.css";
+import "./font-register.css";
+import { Form } from "react-bootstrap";
+import { Container, Col } from "react-bootstrap";
+import "./containerform.css";
+import UserPage from "./UserPage";
 
 const FormNewUser = () => {
-    const { register, handleSubmit, errors, getValues } = useForm({ mode: 'onBlur' });
-    //const [users, setUsers] = useState([])
-    const onSubmit = data => {
-        console.log("soy el submit " + data)
-       
-        //const [user, setUser] = useState ({})
-       // console.log("soy los array" + users)
-        //event.target.reset();
-        //setUsers([...users, data])
-    }
+  const { register, handleSubmit, errors, getValues } = useForm({
+    mode: "onBlur",
+  });
+  //const [users, setUsers] = useState([])
+  const onSubmit = (data) => {
+    console.log("soy el submit " + data);
 
-    return (
-        <>
-            <br></br>
-            <h1 className="container-form font-register">REGISTRATE</h1>
-            <br></br>
-            <div className="container-form">
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <b>Nombre</b>
-                    <input
-                        className="form-control mb-2"
-                        name="userName"
-                        ref={register({
-                            required: { value: true, message: 'Nombre es requerido' },
-                        })}
-                    />
-                    <span className="text-danger text-small d-block mb-2">
-                        {errors?.userName?.message}
-                    </span>
-                    {/* <b>Usuario</b>
+    //const [user, setUser] = useState ({})
+    // console.log("soy los array" + users)
+    //event.target.reset();
+    //setUsers([...users, data])
+  };
+
+  return (
+    <>
+      <br></br>
+      <h1 className="container-form font-register">REGISTRATE</h1>
+      <br></br>
+      <div className="container-form">
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <b>Nombre</b>
+          <input
+            className="form-control mb-2"
+            name="userName"
+            ref={register({
+              required: { value: true, message: "Nombre es requerido" },
+            })}
+          />
+          <span className="text-danger text-small d-block mb-2">
+            {errors?.userName?.message}
+          </span>
+          {/* <b>Usuario</b>
                     <input
                         className="form-control mb-2"
                         name="newUser"
@@ -123,10 +125,12 @@ const FormNewUser = () => {
                     <span className="text-danger text-small d-block mb-2">
                         {errors.validatePassword && errors.validatePassword.message}
                     </span> */}
-                    <button type="submit" className="btn btn-dark">Registrarme</button>
-                </form>
-            </div>
-        </>
-    );
-}
+          <button type="submit" className="btn btn-dark">
+            Registrarme
+          </button>
+        </form>
+      </div>
+    </>
+  );
+};
 export default FormNewUser;
