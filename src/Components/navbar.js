@@ -8,6 +8,7 @@ import Us from './submenu/Us';
 import SignUp from './submenu/SignUp';
 import Admin from './Admin';
 import FormNewUser from './NewUserComponents/FormNewUser';
+import UserPage from './NewUserComponents/UserPage';
 
 function Navbar() {
     return (
@@ -39,7 +40,7 @@ function Navbar() {
                     <Us />
                 </Route>
                 <Route path="/newuser">
-                    <FormNewUser />
+                    <UserPage />
                 </Route>
                 <Route path="/Admin">
                     <Admin />

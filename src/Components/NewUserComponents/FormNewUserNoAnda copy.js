@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css'
@@ -9,28 +9,23 @@ import { Container, Col } from 'react-bootstrap';
 import './containerform.css'
 import UserPage from './UserPage';
 
-function RegistroUsuario() {
-    const [users, setUsers] = useState([])
-    // const [user, setUser] = useState({
-    //     userName: "",
-    //     // newUser: "",
-    //     // dni: "",
-    //     // age: "",
-    //     // email: "",
-    //     // password: "",
-    //     // validatePassword: ""
-    // })
+const FormNewUser = () => {
     const { register, handleSubmit, errors, getValues } = useForm({ mode: 'onBlur' });
-
-    const onSubmit = (data, event) => {
-        console.log("soy el submit" + data)
-        console.log("soy los array" + users)
-        event.target.reset();
-        setUsers([...users, data])
+    //const [users, setUsers] = useState([])
+    const onSubmit = data => {
+        console.log("soy el submit " + data)
+       
+        //const [user, setUser] = useState ({})
+       // console.log("soy los array" + users)
+        //event.target.reset();
+        //setUsers([...users, data])
     }
 
     return (
         <>
+            <br></br>
+            <h1 className="container-form font-register">REGISTRATE</h1>
+            <br></br>
             <div className="container-form">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <b>Nombre</b>
@@ -44,8 +39,8 @@ function RegistroUsuario() {
                     <span className="text-danger text-small d-block mb-2">
                         {errors?.userName?.message}
                     </span>
-                    <b>Usuario</b>
-                    {/* <input
+                    {/* <b>Usuario</b>
+                    <input
                         className="form-control mb-2"
                         name="newUser"
                         ref={register({
@@ -132,7 +127,6 @@ function RegistroUsuario() {
                 </form>
             </div>
         </>
-    )
+    );
 }
-
-export default RegistroUsuario;
+export default FormNewUser;

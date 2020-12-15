@@ -4,15 +4,15 @@ import UserTable from './NewUserComponents/UserTable';
 function Admin({users,setUsers}) {
 
     //const [users, setUsers] = useState([])
-    const [user, setUser] = useState({
-        userName: "",
-        newUser: "",
-        dni: "",
-        age: "",
-        email: "",
-        password: "",
-        validatePassword: ""
-    })
+    // const [user, setUser] = useState({
+    //     userName: "",
+    //     newUser: "",
+    //     dni: "",
+    //     age: "",
+    //     email: "",
+    //     password: "",
+    //     validatePassword: ""
+    // })
 
 
     return (
