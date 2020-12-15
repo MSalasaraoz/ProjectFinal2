@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import NavbarPiola from "./Components/comun/navbarPiola";
-import { Container } from 'react-bootstrap'
-
+import Footer from './Components/Footer'
 function App() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -11,6 +10,7 @@ function App() {
     return (
         <div>
             <NavbarPiola/>
+            <Footer/>
         </div>
     );
 }

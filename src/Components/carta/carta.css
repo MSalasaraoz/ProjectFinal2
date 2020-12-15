@@ -11,7 +11,7 @@
 
 
 .card-image{
-    width: 250px;
+    width: 230px;
 }
 .description-flex{
     display: flex;
@@ -20,7 +20,7 @@
 .card-rarity{
     
     width: 40px;
-    padding: 5%;
+    padding: 0;
 }
 
 .bolder{
@@ -81,21 +81,22 @@
 .card-title-medium-rare{
     background-color:  rgb(233, 228, 218);
     letter-spacing: 2px;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 20px;
     margin: 5px 0px;
     padding: 10px 0px;
 }
 .card-type-medium-rare{
-    font-weight: bolder;
-    align-self: center;
     color: rgb(8, 8, 8);
     background-color: rgb(246, 174, 174);
+    font-weight: bolder;
+    align-self: center;
     width: 100%;
     margin-top: 7%;
     font-size: 20px;
     line-break: loose;
     text-align: center;
+    font-size: 15px
 }
 .card-power-medium-rare{
     background-color: rgb(150, 120, 50);
@@ -104,6 +105,7 @@
     margin: 0px 5px;
     margin-bottom: 20px;
     border:  solid 2px rgb(10, 10, 10) ;
+    font-size: 14px;
 }
 /*common*/
 .card-design-common{
@@ -132,7 +134,7 @@
     background-color: rgb(10, 4, 4);
     width: 100%;
     margin-top: 7%;
-    font-size: 20px;
+    font-size: 15px;
     line-break: loose;
     text-align: center;
     
@@ -145,5 +147,6 @@
     margin: 0px 5px;
     margin-bottom: 20px;
     border:  solid 2px rgb(34, 33, 31) ;
+    font-size: 14px;
 }
 

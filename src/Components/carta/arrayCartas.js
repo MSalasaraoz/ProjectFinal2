@@ -96,7 +96,7 @@ import CardFamous from './CardFamous'
             id: 11,
             name: "Marianela Mirra",
             img: "marianela mirra.jpg",
-            type: "Tecnicas Granhermanisticas",
+            type: "Tecnicas Traicionantes",
             rarity: "common.png",
             power: "elige dos cartas del oponente para hacerle una espontanea. por dos turnos la cartas desaparecen. Alguien le grita de lejos al oponente que paso y se elimina esta carta."
         },

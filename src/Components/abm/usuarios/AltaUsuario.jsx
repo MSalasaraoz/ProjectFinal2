@@ -42,10 +42,11 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
   }
   return (
     <>
-      <Form onSubmit={handleSubmit} name="formNewUser">
+       <div className="Titulo"> Registrate para estar en la lista VIP</div>
+      <Form className="Formulario" onSubmit={handleSubmit} name="formNewUser">
         <Form.Group controlId="firstName">
-          <Form.Label>Nombre</Form.Label>
-          <Form.Control
+          <Form.Label className="Label" className="label">Nombre</Form.Label>
+          <Form.Control className="Input" className="input"
             type="text"
             placeholder="Nombre"
             onChange={handleChange}
@@ -53,9 +54,9 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
             value={user.firstName}
           />
         </Form.Group>
-        <Form.Group controlId="lastName">
-          <Form.Label>Apellido</Form.Label>
-          <Form.Control
+        <Form.Group  controlId="lastName">
+          <Form.Label className="label">Apellido</Form.Label>
+          <Form.Control className="Input" className="input"
             type="text"
             placeholder="Apellido"
             onChange={handleChange}
@@ -63,9 +64,9 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
             value={user.lastName}
           />
         </Form.Group>
-        <Form.Group controlId="country">
-          <Form.Label>Pais</Form.Label>
-          <Form.Control
+        <Form.Group  controlId="country">
+          <Form.Label className="label">Pais</Form.Label>
+          <Form.Control className="Input" className="input"
             type="text"
             placeholder="Pais"
             onChange={handleChange}
@@ -74,8 +75,8 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
           />
         </Form.Group>
         <Form.Group controlId="age">
-          <Form.Label>Edad</Form.Label>
-          <Form.Control
+          <Form.Label className="label">Edad</Form.Label>
+          <Form.Control className="Input" className="input"
             type="number"
             placeholder="Edad"
             onChange={handleChange}
@@ -84,8 +85,8 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
           />
         </Form.Group>
         <Form.Group controlId="email">
-          <Form.Label>Correo electrónico</Form.Label>
-          <Form.Control
+          <Form.Label className="label">Correo electrónico</Form.Label>
+          <Form.Control className="Input" className="input"
             type="email"
             placeholder="Correo electrónico"
             onChange={handleChange}
@@ -94,8 +95,8 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
           />
         </Form.Group>
         <Form.Group controlId="userName">
-          <Form.Label>Nombre de Usuario</Form.Label>
-          <Form.Control
+          <Form.Label className="label">Nombre de Usuario</Form.Label>
+          <Form.Control  className="input"
             type="text"
             placeholder="Nombre de Usuario"
             onChange={handleChange}
@@ -104,8 +105,8 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
           />
         </Form.Group>
         <Form.Group controlId="password">
-          <Form.Label>Contraseña</Form.Label>
-          <Form.Control
+          <Form.Label className="label">Contraseña</Form.Label>
+          <Form.Control className="Input" className="input"
             type="password"
             placeholder="Contraseña"
             onChange={handleChange}
@@ -113,8 +114,8 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
             value={user.password}
           />
         </Form.Group>
-        <Button className="w-100" variant="warning" type="submit">
-          Registrarme
+        <Button className="w-30" variant="dark" type="submit">
+          Inicia Sesión
         </Button>
       </Form>
     </>

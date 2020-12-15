@@ -1,6 +1,36 @@
-body{
-    background-color:rgb(224,224,224);
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.font-register{
-    font-family: 'Nerko One', cursive;
+.Titulo{
+    margin: 2% 26% 0% 35%;
+    color: white;
+    font-size: 30px;
+    background-color: #040f0f;
+    border-bottom: 8px solid #170312;
+    border-top: 8px solid #170312;
+    border-right: 20px solid #170312;
+}
+.Titulo-2{
+    margin: 2% 36% 5% 40%;
+    color: white;
+    font-size: 30px;
+    background-color: #040f0f;
+    border-bottom: 8px solid #170312;
+    border-top: 8px solid #170312;
+    border-right: 20px solid #170312;
+}
+.label{
+    font-weight: bolder;
+
+}
+.input{
+    width: 140%;
+}
+.MoviendoElBoton{
+    margin: 2%;
+    padding-bottom: -5%;
+    margin-left: 6%;
+    margin-bottom: 9%;
 }

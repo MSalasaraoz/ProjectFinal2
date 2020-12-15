@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Inicio from "../Inicio";
 import Nosotros from "../Nosotros";
 import AltaUsuarioApp from "../abm/usuarios/AltaUsuarioApp";
-
+import InicioSesionApp from "../abm/usuarios/InicioSesionApp";
+import Admin from "../Admin";
 function NavbarPiola() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -21,9 +22,6 @@ function NavbarPiola() {
                             class="Logo-text"
                             alt=""
                         ></img>
-                    </a>
-                    <a href="/" className="sub-menu">
-                        Inicio
                     </a>
                     <a href="/Nosotros" className="sub-menu">
                         Nosotros
@@ -47,6 +45,12 @@ function NavbarPiola() {
                 </Route>
                 <Route path="/Nosotros">
                     <Nosotros />
+                </Route>
+                <Route path="/Admin">
+                    <Admin />
+                </Route>
+                <Route path="/login">
+                    <InicioSesionApp />
                 </Route>
                 <Route path="/Registrarse">
                     <AltaUsuarioApp/>

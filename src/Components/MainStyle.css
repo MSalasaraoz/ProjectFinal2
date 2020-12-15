@@ -33,3 +33,12 @@ background: radial-gradient(circle, rgba(23,3,18,1) 43%, rgba(4,15,15,1) 100%, r
     border-color: grey;
     transition: all 500ms;
 }
+
+.footer{
+    position: block;
+    float: inline-end;
+    /* bottom: 0; */
+    font-size: 20px;
+    background-color: thistle;
+    padding: 0 29% ;
+}
