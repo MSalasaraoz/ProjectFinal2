@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./NewUserComponents/StyleNewUser.css";
 import "./NewUserComponents/font-register.css";
-import CardNueva from "./CardCelebrity";
 
 function CardCelebrity() {
   const [cards, setCards] = useState([]);
