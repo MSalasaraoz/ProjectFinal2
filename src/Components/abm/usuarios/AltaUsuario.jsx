@@ -106,7 +106,7 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
         <Form.Group controlId="password">
           <Form.Label>Contraseña</Form.Label>
           <Form.Control
-            type="text"
+            type="password"
             placeholder="Contraseña"
             onChange={handleChange}
             name="password"
