@@ -12,7 +12,7 @@ function UserPage({ users }) {
              {/* <div className="d-flex flex-wrap">
               {users.map((item) => {
                 return (
-                  <CardNewUser key={item.apellido} Users={item} />
+                  <CardNewUser key={item.apellido} users={item} />
                 )
               })}
             </div> */}

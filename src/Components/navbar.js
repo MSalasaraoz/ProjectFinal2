@@ -6,35 +6,49 @@ import Inicio from './submenu/Inicio';
 import OwnCards from './submenu/OwnCards';
 import Us from './submenu/Us';
 import SignUp from './submenu/SignUp';
-function Navbar(){
-    return(
+import Admin from './Admin';
+import FormNewUser from './NewUserComponents/FormNewUser';
+
+function Navbar() {
+    return (
         <Router>
-        <div className="Navbar-background">
-            <div className="flex-item-1">
-                <a  href="/">
-                    <img className="Logo" src={logo}  alt=""></img>
-                    <img src="projectfinale.png" class="Logo-text" alt=""></img>      </a>
-                <a href="/Own-Cards" className="sub-menu">Tus Cartas</a>
-                <a href="/Us" className="sub-menu">Nosotros</a>
+            <div className="Navbar-background">
+                <div className="flex-item-1">
+                    <a href="/">
+                        <img className="Logo" src={logo} alt=""></img>
+                        <img src="projectfinale.png" class="Logo-text" alt=""></img>      </a>
+                    <a href="/Own-Cards" className="sub-menu">Tus Cartas</a>
+                    <a href="/Us" className="sub-menu">Nosotros</a>
+                </div>
+                <div className="flex-item-2">
+                    <a href="/newuser" className="sign-up">Registro</a></div>
+                <div className="flex-item-2">
+                    <a href="/Admin" className="sign-up">Administrar</a></div>
+                <div className="flex-item-2">
+                    <a href="/SignUp" className="sign-up">Inicia Sesión</a></div>
             </div>
-            <div className="flex-item-2">
-                <a href="/SignUp" className="sign-up">Inicia Sesión</a></div>
-            </div>
+
             <Switch>
                 <Route path="/" exact>
-                    <Inicio/>
+                    <Inicio />
                 </Route>
                 <Route path="/Own-Cards">
-                    <OwnCards/>
+                    <OwnCards />
                 </Route>
                 <Route path="/Us">
-                    <Us/>
+                    <Us />
+                </Route>
+                <Route path="/newuser">
+                    <FormNewUser />
+                </Route>
+                <Route path="/Admin">
+                    <Admin />
                 </Route>
                 <Route path="/SignUp">
-                    <SignUp/>
+                    <SignUp />
                 </Route>
             </Switch>
-            </Router>
+        </Router>
     )
 }
 
