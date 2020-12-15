@@ -115,7 +115,7 @@ const altaUsuario = ({ setUser, user, users, setUsers }) => {
             value={user.password}
           />
         </Form.Group>
-        <Button className="w-100" size="sm" variant="dark" type="submit">
+        <Button className="botones" size="sm" variant="dark" type="submit">
           Inicia Sesión
         </Button>
       </Form>

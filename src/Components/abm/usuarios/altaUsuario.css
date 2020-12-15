@@ -1,6 +1,9 @@
-
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 .Titulo{
-    /* margin: 2% 26% 0% 35%; */
     position: relative;
     color: white;
     font-size: 30px;
@@ -8,12 +11,12 @@
     border-bottom: 8px solid #170312;
     border-top: 8px solid #170312;
     border-right: 20px solid #170312;
-    
+    text-align: center;
     z-index: 5;
  
 }
 .Titulo-2{
-    /* margin: 2% 3% 5% 40%; */
+    text-align: center;
     position: relative;
     color: white;
     font-size: 30px;
@@ -26,8 +29,21 @@
 }
 .label{
     font-weight: bolder;
-
+    align-self: center;
+    justify-content: center;
+    margin-left: 30%;
 }
 .input{
-    width: 60%;
+    width: 40%;
+    align-self: center ;
+    justify-content: center;
+    margin-left: 30%;
+}
+.botones{
+    align-self: center;
+    width: 20%;
+}
+#userName{
+    align-self: center;
+    justify-content: center;
 }
