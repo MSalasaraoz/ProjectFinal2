@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Members = [
+const arrayNosotros = [
     {
         id: 0,
         name: 'Jimena Bulacio',
@@ -50,5 +50,5 @@ const Members = [
         power: "Fundador de Project Finale. Nuestro proyecto final del curso de FullStack. Con esta carta podes hacer mas cartas asi que siempre ganas."
     }
 ];
-export default Members;
+export default arrayNosotros;
     

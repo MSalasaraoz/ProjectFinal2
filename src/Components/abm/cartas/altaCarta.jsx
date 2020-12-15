@@ -1,6 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import "./StyleNewUser.css";
 import "./font-register.css";
 import { Form, Button } from "react-bootstrap";

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
-import './StyleNewUser.css'
-import './font-register.css'
-import FormNewUser from './FormNewUser';
+import './altaUsuario.css'
+import AltaUsuario from './AltaUsuario';
 
-function UserPage() {
+function AltaUsuarioApp() {
   const [users, setUsers] = useState([])
   const [user, setUser] = useState({
     firstName: '',
@@ -17,7 +16,7 @@ function UserPage() {
   })
   return (
     <>
-       <FormNewUser
+       <AltaUsuario
         setUser={setUser}
         user={user}
         users={users}
@@ -27,4 +26,4 @@ function UserPage() {
   );
 }
 
-export default UserPage;
+export default AltaUsuarioApp;

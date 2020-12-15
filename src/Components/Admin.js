@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import UserTable from "./NewUserComponents/UserTable";
+import UserTable from "./abm/usuarios/tablaUsuarios";
 
 function Admin({ users, setUsers }) {
   //const [users, setUsers] = useState([])

@@ -1,51 +1,40 @@
-import React from 'react';
-import './card.css';
-import Members from './Members';
+import React from 'react'
+import './carta.css'
+import famousPeople from './arrayCartas'
 
-function Us(){
+function CardFamous(props) {
     function cardDesignVariant(rarity) {
         switch (rarity) {
             case "rare.png":
                 return "card-design-rare"
-                break;
             case "medium-rare.png":
                 return "card-design-medium-rare"
-                break;
             case "common.png":
                 return "card-design-common"
-                break;
             default:
                 return ""
-                break;
         }
     }
     function cardTitleVariant(rarity) {
         switch (rarity) {
             case "rare.png":
                 return "card-title-rare"
-                break;
             case "medium-rare.png":
                 return "card-title-medium-rare"
-                break;
             case "common.png":
                 return "card-title-common"
-                break;
             default:
                 return ""
-                break;
         }
     }
     function cardTypeVariant(rarity) {
         switch (rarity) {
             case "rare.png":
                 return "card-type-rare"
-                break;
             case "medium-rare.png":
                 return "card-type-medium-rare"
-                break;
-                case "common.png":
-                    return "card-type-common"
-                    break;
+            case "common.png":
+                return "card-type-common"
             default:
                 return ""
         }
@@ -54,37 +43,36 @@ function Us(){
         switch (rarity) {
             case "rare.png":
                 return "card-power-rare"
-                break;
             case "medium-rare.png":
                 return "card-power-medium-rare"
-                break;
             case "common.png":
                 return "card-power-common"
-                break;
             default:
                 return ""
         }
     }
-    //this is were the cards find the final design
         
-    const ShowMembers = <div className="flex-cards">
-        {Members.map((VIP) =>
-        <div className={cardDesignVariant(VIP.rarity)}>
-        <p className={cardTitleVariant(VIP.rarity)}>{VIP.name}</p>
-        <img className="card-image" src={VIP.img} alt=""></img>
-        <div className="description-flex">
-            <div className={cardTypeVariant(VIP.rarity)}>{VIP.type}</div>
-            <img className="card-rarity" src={VIP.rarity} alt=""></img>
+    const ShowCard = 
+        <div className="flex-cards">
+            {famousPeople.map((vipCard) =>
+                <div className={cardDesignVariant(vipCard.rarity)}>
+                <p className={cardTitleVariant(vipCard.rarity)}>
+                    {vipCard.name}
+                </p>
+                <img className="card-image" src={vipCard.img} alt=""></img>
+                <div className="description-flex">
+                    <div className={cardTypeVariant(vipCard.rarity)}>{vipCard.type}</div>
+                    <img className="card-rarity" src={vipCard.rarity} alt=""></img>
+                </div>
+                <div className={cardPowerVariant(vipCard.rarity)}>
+                    {vipCard.power}
+                </div>
+            </div>)} 
         </div>
-        <div className={cardPowerVariant(VIP.rarity)}>{VIP.power}</div>
-    </div>)} </div>
-    
-
 
     return(
-        ShowMembers
-        );
-}
+        ShowCard
+    );
+};
 
-
-export default Us;
+export default CardFamous;

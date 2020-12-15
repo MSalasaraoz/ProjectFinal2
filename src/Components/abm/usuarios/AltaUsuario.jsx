@@ -1,13 +1,10 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import "./StyleNewUser.css";
-import "./font-register.css";
+import "./altaUsuario.css";
 import { Form, Button } from "react-bootstrap";
-import "./containerform.css";
-import UserPage from "./UserPage";
 
-const FormNewUser = ({ setUser, user, users, setUsers }) => {
+const altaUsuario = ({ setUser, user, users, setUsers }) => {
   function handleChange(event) {
     setUser({
       ...user,
@@ -106,14 +103,14 @@ const FormNewUser = ({ setUser, user, users, setUsers }) => {
             value={user.userName}
           />
         </Form.Group>
-        <Form.Group controlId="role">
-          <Form.Label>Rol</Form.Label>
+        <Form.Group controlId="password">
+          <Form.Label>Contraseña</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Rol"
+            placeholder="Contraseña"
             onChange={handleChange}
-            name="role"
-            value={user.role}
+            name="password"
+            value={user.password}
           />
         </Form.Group>
         <Button className="w-100" variant="warning" type="submit">
@@ -123,4 +120,4 @@ const FormNewUser = ({ setUser, user, users, setUsers }) => {
     </>
   );
 };
-export default withRouter(FormNewUser);
+export default withRouter(altaUsuario);
