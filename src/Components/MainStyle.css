@@ -12,7 +12,7 @@ background: radial-gradient(circle, rgba(23,3,18,1) 43%, rgba(4,15,15,1) 100%, r
 }
 .Main-Body{
     margin: 2% 5%;
-    font-size: 20px;
+    font-size: 1rem;
 }
 .Home-flex{
     display: flex;
@@ -42,3 +42,14 @@ background: radial-gradient(circle, rgba(23,3,18,1) 43%, rgba(4,15,15,1) 100%, r
     background-color: thistle;
     padding: 0 29% ;
 }
+
+@media (max-width: 500px){
+    .footer{
+    padding: 0 12%;
+    
+      }}
+  @media (max-width: 428px){
+        .title{
+            font-size: 300%;
+        }
+      }

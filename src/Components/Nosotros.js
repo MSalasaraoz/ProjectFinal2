@@ -1,7 +1,6 @@
 import React from 'react';
 import './carta/carta.css';
 import arrayNosotros from './arrayNosotros';
-
 function Nosotros(){
     function cardDesignVariant(rarity) {
         switch (rarity) {
@@ -65,8 +64,7 @@ function Nosotros(){
                 return ""
         }
     }
-    //this is were the cards find the final design
-        
+    //this is were the cards find the final design  
     const ShowMembers = <div className="flex-cards">
         {arrayNosotros.map((VIP) =>
         <div className={cardDesignVariant(VIP.rarity)}>
@@ -78,11 +76,8 @@ function Nosotros(){
         </div>
         <div className={cardPowerVariant(VIP.rarity)}>{VIP.power}</div>
     </div>)} </div>
-    
     return(
         ShowMembers
         );
 }
-
-
 export default Nosotros;

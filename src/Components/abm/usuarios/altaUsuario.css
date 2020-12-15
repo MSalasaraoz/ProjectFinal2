@@ -4,22 +4,29 @@
     align-items: center;
 }
 .Titulo{
-    margin: 2% 26% 0% 35%;
+    /* margin: 2% 26% 0% 35%; */
+    position: relative;
     color: white;
     font-size: 30px;
     background-color: #040f0f;
     border-bottom: 8px solid #170312;
     border-top: 8px solid #170312;
     border-right: 20px solid #170312;
+    
+    z-index: 5;
+ 
 }
 .Titulo-2{
-    margin: 2% 36% 5% 40%;
+    /* margin: 2% 3% 5% 40%; */
+    position: relative;
     color: white;
     font-size: 30px;
     background-color: #040f0f;
     border-bottom: 8px solid #170312;
     border-top: 8px solid #170312;
     border-right: 20px solid #170312;
+    z-index: 4;
+   
 }
 .label{
     font-weight: bolder;

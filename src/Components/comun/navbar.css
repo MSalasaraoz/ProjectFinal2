@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  width: 100%;
 }
 .Navbar-background {
   height: 80px;
@@ -27,7 +28,7 @@
   color: white;
   font-size: 25px;
   font-weight: bolder;
-  padding-inline: 50px;
+ 
   border-right: solid white 5px;
   cursor: pointer;
 }
@@ -48,3 +49,52 @@
   color: white;
   border-radius: 3px;
 }
+@media (max-width: 803px) {
+  .sign-up {
+    background-color: #d62828;
+    font-size: 12px;
+    padding-inline: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    align-self: center;
+    color: white;
+    border-radius: 3px;
+  }
+}
+@media (max-width: 618px){
+  .sub-menu {
+    align-self: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+    border-right: solid white 5px;
+    cursor: pointer;
+  }
+ .flex-item-1{
+   flex-direction: column;
+ }
+  .sign-up {
+    background-color: #d62828;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-self: center;
+    color: white;
+    border-radius: 3px;
+  }
+}
+@media (max-width: 452px){
+  
+  .flex-item-2 {
+    flex-direction: column;
+  }
+  .Navbar-background {
+    height: 80px;
+    background-color: #040f0f;
+  }
+  .sign-up{
+    flex-wrap: wrap;
+  }
+}
+

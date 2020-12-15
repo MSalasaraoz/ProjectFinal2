@@ -8,15 +8,13 @@ import InicioSesionApp from "../abm/usuarios/InicioSesionApp";
 import Admin from "../Admin";
 function NavbarPiola() {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggle = () => setIsOpen(!isOpen);
-
     return (
         <Router>
             <div className="Navbar-background">
                 <div className="flex-item-1">
                     <a href="/">
-                        <img className="Logo" src="logo.png" alt=""></img>
+                        
                         <img
                             src="projectfinale.png"
                             class="Logo-text"
@@ -32,7 +30,7 @@ function NavbarPiola() {
                 </div>
                 <div className="flex-item-2">
                     <a href="/login" className="sign-up">
-                        Iniciar Sesión
+                        Ingresar
                     </a>
                     <a href="/Registrarse" className="sign-up">
                         Registro
@@ -59,5 +57,4 @@ function NavbarPiola() {
         </Router>
     );
 }
-
 export default NavbarPiola;
